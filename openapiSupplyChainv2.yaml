@@ -1,0 +1,63 @@
+---
+openapi: 3.0.3
+info:
+  title: Mojix ytem API
+  contact:
+    name: "Mojix, Inc."
+    url: https://mojix.com
+    email: support@mojix.com
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+security:
+- JWT: []
+tags:
+- name: Supply chain
+  description: API used to store and query list of tags or product/quantities
+paths:
+  /stock-management/manage/application/picking:
+    get:
+      tags:
+      - Pick List
+      responses:
+        "200":
+          description: OK
+  /stock-management/manage/pick:
+    post:
+      tags:
+      - Pick List
+      parameters:
+      - name: format
+        in: query
+        schema:
+          type: string
+      - name: from
+        in: query
+        schema:
+          format: int32
+          default: "0"
+          type: integer
+      - name: size
+        in: query
+        schema:
+          format: int32
+          type: integer
+      - name: tenant
+        in: header
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200":
+          description: OK
+components:
+  securitySchemes:
+    JWT:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
