@@ -12,6 +12,8 @@ info:
   version: 1.0.0
 security:
 - JWT: []
+servers:
+  - url: https://dev-02.vizix.cloud/
 tags:
 - name: Supply chain
   description: API used to store and query list of tags or product/quantities
