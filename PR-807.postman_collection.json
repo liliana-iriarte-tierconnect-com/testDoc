@@ -1,0 +1,1600 @@
+{
+	"info": {
+		"_postman_id": "f2bcf87e-8f35-4549-b727-38bcf67d1b73",
+		"name": "PR-807",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "supply-chain",
+			"item": [
+				{
+					"name": "supply_chain/reference_lists",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"transactionId\": \"dev02-angel-transaction-22-11-22-1\",\n  \"status\": \"available\",\n  \"bizStep\": \"urn:epcglobal:cbv:bizstep:shipping\",\n  \"bizLocation\": \"12\",\n  \"extensions\": {\n    \"deliveryPosCode\": \"ROYALE_1\",\n    \"deliveryPosLevel\": \"floor\",\n    \"deliveryPosX\": 1227.627906976733,\n    \"deliveryPosY\": 721.046511627907,\n    \"deliveryPosZ\": 500,\n    \"requestingStaff\": \"tester2\",\n    \"RRCC\": \"searchnpick-c6bbef165922c044-1547391271380\"\n  },\n  \"contentFormat\": \"quantity\",\n  \"containers\": [\n    {\n      \"content\": [\n        {\n          \"format\": \"sku-quantity\",\n          \"sku\": \"AA10000001\",\n          \"quantity\": 6\n        }\n      ]\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "{{host}}{{supply-chain}}supply_chain/reference_lists",
+							"host": [
+								"{{host}}{{supply-chain}}supply_chain"
+							],
+							"path": [
+								"reference_lists"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Data Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"transactionId\": \"dev02-angel-transaction-18-11-22-2\",\n  \"status\": \"available\",\n  \"bizStep\": \"urn:epcglobal:cbv:bizstep:shipping\",\n  \"bizLocation\": \"12\",\n  \"extensions\": {\n    \"deliveryPosCode\": \"ROYALE_1\",\n    \"deliveryPosLevel\": \"floor\",\n    \"deliveryPosX\": 1227.627906976733,\n    \"deliveryPosY\": 721.046511627907,\n    \"deliveryPosZ\": 500,\n    \"requestingStaff\": \"tester2\",\n    \"RRCC\": \"searchnpick-c6bbef165922c044-1547391271380\"\n  },\n  \"contentFormat\": \"quantity\",\n  \"containers\": [\n    {\n      \"content\": [\n        {\n          \"format\": \"sku-quantity\",\n          \"sku\": \"925324312052\",\n          \"quantity\": 12\n        }\n      ]\n    }\n  ]\n}"
+								},
+								"url": {
+									"raw": "{{host}}{{supply-chain}}supply_chain/reference_lists",
+									"host": [
+										"{{host}}{{supply-chain}}supply_chain"
+									],
+									"path": [
+										"reference_lists"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "7221038396080356"
+						}
+					]
+				},
+				{
+					"name": "supply_chain/reference_lists/{id}",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"transactionId\": \"dev02-angel-transaction-18-11-22-4\",\n  \"referenceListId\": 7221040573430357,\n  \"status\": \"available\",\n  \"bizStep\": \"urn:epcglobal:cbv:bizstep:shipping\",\n  \"bizLocation\": \"12\",\n  \"extensions\": {\n    \"deliveryPosCode\": \"ROYALE_1\",\n    \"deliveryPosLevel\": \"floor\",\n    \"deliveryPosX\": 1227.627906976733,\n    \"deliveryPosY\": 721.046511627907,\n    \"deliveryPosZ\": 500,\n    \"requestingStaff\": \"tester2\",\n    \"RRCC\": \"searchnpick-c6bbef165922c044-1547391271380\"\n  },\n  \"contentFormat\": \"quantity\",\n  \"containers\": [\n    {\n      \"content\": [\n        {\n          \"format\": \"sku-quantity\",\n          \"sku\": \"925324312052\",\n          \"quantity\": 12\n        }\n      ]\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "{{host}}{{supply-chain}}supply_chain/reference_lists/7221040573430357",
+							"host": [
+								"{{host}}{{supply-chain}}supply_chain"
+							],
+							"path": [
+								"reference_lists",
+								"7221040573430357"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Data Example",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"transactionId\": \"dev02-angel-transaction-18-11-22-2\",\n  \"status\": \"available\",\n  \"bizStep\": \"urn:epcglobal:cbv:bizstep:shipping\",\n  \"bizLocation\": \"12\",\n  \"extensions\": {\n    \"deliveryPosCode\": \"ROYALE_1\",\n    \"deliveryPosLevel\": \"floor\",\n    \"deliveryPosX\": 1227.627906976733,\n    \"deliveryPosY\": 721.046511627907,\n    \"deliveryPosZ\": 500,\n    \"requestingStaff\": \"tester2\",\n    \"RRCC\": \"searchnpick-c6bbef165922c044-1547391271380\"\n  },\n  \"contentFormat\": \"quantity\",\n  \"containers\": [\n    {\n      \"content\": [\n        {\n          \"format\": \"sku-quantity\",\n          \"sku\": \"925324312052\",\n          \"quantity\": 12\n        }\n      ]\n    }\n  ]\n}"
+								},
+								"url": {
+									"raw": "{{host}}{{supply-chain}}supply_chain/reference_lists/7221040573430357",
+									"host": [
+										"{{host}}{{supply-chain}}supply_chain"
+									],
+									"path": [
+										"reference_lists",
+										"7221040573430357"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\n  \"transactionId\": \"dev02-angel-transaction-18-11-22-4\",\n  \"referenceListId\": 7221040573430357,\n  \"status\": \"available\",\n  \"bizStep\": \"urn:epcglobal:cbv:bizstep:shipping\",\n  \"bizLocation\": \"12\",\n  \"extensions\": {\n    \"deliveryPosCode\": \"ROYALE_1\",\n    \"deliveryPosLevel\": \"floor\",\n    \"deliveryPosX\": 1227.627906976733,\n    \"deliveryPosY\": 721.046511627907,\n    \"deliveryPosZ\": 500,\n    \"requestingStaff\": \"tester2\",\n    \"RRCC\": \"searchnpick-c6bbef165922c044-1547391271380\"\n  },\n  \"contentFormat\": \"quantity\",\n  \"containers\": [\n    {\n      \"content\": [\n        {\n          \"format\": \"sku-quantity\",\n          \"sku\": \"925324312052\",\n          \"quantity\": 12\n        }\n      ]\n    }\n  ]\n}"
+						}
+					]
+				},
+				{
+					"name": "GET /supply_chain/reference_lists/{list_id}",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "{{host}}{{supply-chain}}supply_chain/reference_lists/7224358063000889?format=sku-quantity",
+							"host": [
+								"{{host}}{{supply-chain}}supply_chain"
+							],
+							"path": [
+								"reference_lists",
+								"7224358063000889"
+							],
+							"query": [
+								{
+									"key": "format",
+									"value": "sku-quantity"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Data Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "",
+										"value": ""
+									}
+								],
+								"url": {
+									"raw": "{{host}}{{supply-chain}}supply_chain/reference_lists/7221040573430357?format=sku-quantity",
+									"host": [
+										"{{host}}{{supply-chain}}supply_chain"
+									],
+									"path": [
+										"reference_lists",
+										"7221040573430357"
+									],
+									"query": [
+										{
+											"key": "format",
+											"value": "sku-quantity"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"referenceListId\": 7224358063000889,\n    \"contentFormat\": \"quantity\",\n    \"transactionId\": \"dev02-angel-transaction-22-11-22-1\",\n    \"creationTime\": \"2022-11-22T12:36:46.272Z\",\n    \"updateTime\": \"2022-11-22T12:36:46.515Z\",\n    \"expirationTime\": null,\n    \"lastStatusChange\": \"2022-11-22T12:36:46.272Z\",\n    \"status\": \"available\",\n    \"bizStep\": \"urn:epcglobal:cbv:bizstep:shipping\",\n    \"bizLocation\": \"12\",\n    \"extensions\": {\n        \"deliveryPosCode\": \"ROYALE_1\",\n        \"deliveryPosLevel\": \"floor\",\n        \"deliveryPosX\": 1227.627906976733,\n        \"deliveryPosY\": 721.046511627907,\n        \"deliveryPosZ\": 500,\n        \"requestingStaff\": \"tester2\",\n        \"RRCC\": \"searchnpick-c6bbef165922c044-1547391271380\",\n        \"debug\": \"{\\\"deliveryPosCode\\\":\\\"ROYALE_1\\\",\\\"deliveryPosLevel\\\":\\\"floor\\\",\\\"deliveryPosX\\\":1227.627906976733,\\\"deliveryPosY\\\":721.046511627907,\\\"deliveryPosZ\\\":500,\\\"requestingStaff\\\":\\\"tester2\\\",\\\"RRCC\\\":\\\"searchnpick-c6bbef165922c044-1547391271380\\\"}\"\n    },\n    \"containers\": [\n        {\n            \"content\": [\n                {\n                    \"format\": \"sku-quantity\",\n                    \"quantity\": 6,\n                    \"sku\": \"AA10000001\"\n                }\n            ]\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "GET /supply_chain/transactions/{transactionId}/results",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "{{host}}{{supply-chain}}supply_chain/transactions/dev02-angel-transaction-22-11-22-1/results?format=sku-quantity",
+							"host": [
+								"{{host}}{{supply-chain}}supply_chain"
+							],
+							"path": [
+								"transactions",
+								"dev02-angel-transaction-22-11-22-1",
+								"results"
+							],
+							"query": [
+								{
+									"key": "format",
+									"value": "sku-quantity"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Data Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "",
+										"value": ""
+									}
+								],
+								"url": {
+									"raw": "{{host}}{{supply-chain}}supply_chain/reference_lists/7221040573430357?format=sku-quantity",
+									"host": [
+										"{{host}}{{supply-chain}}supply_chain"
+									],
+									"path": [
+										"reference_lists",
+										"7221040573430357"
+									],
+									"query": [
+										{
+											"key": "format",
+											"value": "sku-quantity"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "[\n    {\n        \"bizLocation\": \"urn:epc:id:sgln:101_SALESFLOOR\",\n        \"bizStep\": \"urn:epcglobal:cbv:bizstep:shipping\",\n        \"contentFormat\": \"quantity\",\n        \"creationTime\": \"2022-11-22T11:30:11.992Z\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:sellable_accessible\",\n        \"elementList\": [\n            {\n                \"format\": \"sku-quantity\",\n                \"sku\": \"AA10000001\",\n                \"quantity\": 6\n            }\n        ],\n        \"extension\": {\n            \"cxi_source\": \"310\",\n            \"Extension_Destinataire\": \"\",\n            \"cxi_destination\": \"\",\n            \"mjx_user\": \"pernroot\",\n            \"Current_Location\": \"310\",\n            \"cxi_reflist_status\": \"done\"\n        },\n        \"id\": \"ObjectEvent-1669116611992-d3f9a3567d9caf8d9fa10d1dd4a2ed6c-790450d9a771ced8c73efe73db0e95b6\",\n        \"readPoint\": \"RFD850018083523020258 - A4:34:F1:FA:9C:60\",\n        \"recordTime\": \"2022-11-22T13:08:22.802Z\",\n        \"transactionId\": \"dev02-angel-transaction-22-11-22-1\",\n        \"type\": \"global\"\n    },\n    {\n        \"bizLocation\": \"urn:epc:id:sgln:101_SALESFLOOR\",\n        \"bizStep\": \"urn:epcglobal:cbv:bizstep:packing\",\n        \"contentFormat\": \"quantity\",\n        \"creationTime\": \"2022-11-22T11:30:11.992Z\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:sellable_accessible\",\n        \"elementList\": [\n            {\n                \"format\": \"sku-quantity\",\n                \"sku\": \"AA10000001\",\n                \"quantity\": 6\n            }\n        ],\n        \"extension\": {\n            \"cxi_source\": \"310\",\n            \"Extension_Destinataire\": \"\",\n            \"cxi_destination\": \"\",\n            \"mjx_user\": \"pernroot\",\n            \"Current_Location\": \"310\",\n            \"cxi_reflist_status\": \"done\"\n        },\n        \"id\": \"ObjectEvent-1669116611992-8ea296f3e12daa260b9e258465f19b42-790450d9a771ced8c73efe73db0e95b6\",\n        \"readPoint\": \"RFD850018083523020258 - A4:34:F1:FA:9C:60\",\n        \"recordTime\": \"2022-11-22T12:41:13.351Z\",\n        \"transactionId\": \"dev02-angel-transaction-22-11-22-1\",\n        \"type\": \"global\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GET /supply_chain/transactions/{transactionId}/results/extended",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "{{host}}{{supply-chain}}supply_chain/transactions/dev02-angel-transaction-22-11-22-1/results/extended?format=sku-quantity",
+							"host": [
+								"{{host}}{{supply-chain}}supply_chain"
+							],
+							"path": [
+								"transactions",
+								"dev02-angel-transaction-22-11-22-1",
+								"results",
+								"extended"
+							],
+							"query": [
+								{
+									"key": "format",
+									"value": "sku-quantity"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Data Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "",
+										"value": ""
+									}
+								],
+								"url": {
+									"raw": "{{host}}{{supply-chain}}supply_chain/reference_lists/7221040573430357?format=sku-quantity",
+									"host": [
+										"{{host}}{{supply-chain}}supply_chain"
+									],
+									"path": [
+										"reference_lists",
+										"7221040573430357"
+									],
+									"query": [
+										{
+											"key": "format",
+											"value": "sku-quantity"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "[\n    {\n        \"bizLocation\": \"urn:epc:id:sgln:101_SALESFLOOR\",\n        \"bizStep\": \"urn:epcglobal:cbv:bizstep:shipping\",\n        \"contentFormat\": \"quantity\",\n        \"creationTime\": \"2022-11-22T11:30:11.992Z\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:sellable_accessible\",\n        \"elementList\": [\n            {\n                \"format\": \"sku-quantity\",\n                \"sku\": \"AA10000001\",\n                \"quantity\": 6\n            }\n        ],\n        \"extension\": {\n            \"cxi_source\": \"310\",\n            \"Extension_Destinataire\": \"\",\n            \"cxi_destination\": \"\",\n            \"mjx_user\": \"pernroot\",\n            \"Current_Location\": \"310\",\n            \"cxi_reflist_status\": \"done\"\n        },\n        \"id\": \"ObjectEvent-1669116611992-d3f9a3567d9caf8d9fa10d1dd4a2ed6c-790450d9a771ced8c73efe73db0e95b6\",\n        \"readPoint\": \"RFD850018083523020258 - A4:34:F1:FA:9C:60\",\n        \"recordTime\": \"2022-11-22T13:08:22.802Z\",\n        \"transactionId\": \"dev02-angel-transaction-22-11-22-1\",\n        \"type\": \"global\"\n    },\n    {\n        \"bizLocation\": \"urn:epc:id:sgln:101_SALESFLOOR\",\n        \"bizStep\": \"urn:epcglobal:cbv:bizstep:packing\",\n        \"contentFormat\": \"quantity\",\n        \"creationTime\": \"2022-11-22T11:30:11.992Z\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:sellable_accessible\",\n        \"elementList\": [\n            {\n                \"format\": \"sku-quantity\",\n                \"sku\": \"AA10000001\",\n                \"quantity\": 6\n            }\n        ],\n        \"extension\": {\n            \"cxi_source\": \"310\",\n            \"Extension_Destinataire\": \"\",\n            \"cxi_destination\": \"\",\n            \"mjx_user\": \"pernroot\",\n            \"Current_Location\": \"310\",\n            \"cxi_reflist_status\": \"done\"\n        },\n        \"id\": \"ObjectEvent-1669116611992-8ea296f3e12daa260b9e258465f19b42-790450d9a771ced8c73efe73db0e95b6\",\n        \"readPoint\": \"RFD850018083523020258 - A4:34:F1:FA:9C:60\",\n        \"recordTime\": \"2022-11-22T12:41:13.351Z\",\n        \"transactionId\": \"dev02-angel-transaction-22-11-22-1\",\n        \"type\": \"global\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GET /supply_chain/reference_lists/{list_id}/compare",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "{{host}}{{supply-chain}}supply_chain/reference_lists/7224358063000889/compare?as_sku_quantity=true",
+							"host": [
+								"{{host}}{{supply-chain}}supply_chain"
+							],
+							"path": [
+								"reference_lists",
+								"7224358063000889",
+								"compare"
+							],
+							"query": [
+								{
+									"key": "as_sku_quantity",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Data Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "",
+										"value": ""
+									}
+								],
+								"url": {
+									"raw": "{{host}}{{supply-chain}}supply_chain/reference_lists/7221040573430357?format=sku-quantity",
+									"host": [
+										"{{host}}{{supply-chain}}supply_chain"
+									],
+									"path": [
+										"reference_lists",
+										"7221040573430357"
+									],
+									"query": [
+										{
+											"key": "format",
+											"value": "sku-quantity"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"listId\": \"7224358063000889\",\n    \"entities\": [\n        {\n            \"id\": \"dev02-angel-transaction-22-11-22-1\",\n            \"type\": \"result\"\n        }\n    ],\n    \"matchCount\": 6,\n    \"discrepenciesCount\": 0,\n    \"containers\": [\n        {\n            \"matching\": [\n                {\n                    \"format\": \"sku-quantity\",\n                    \"sku\": \"AA10000001\",\n                    \"quantity\": 6\n                }\n            ],\n            \"missing\": [],\n            \"notExpected\": []\n        }\n    ],\n    \"isComparable\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "POST /supply_chain/reference_lists/searches/results",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"order\": {\n        \"property\": \"creationTime\",\n        \"direction\": \"ASC\"\n    },\n    \"filters\": [\n        {\n            \"property\": \"transactionId\",\n            \"operator\": \"EQ\",\n            \"values\": [\n                \"dev02-angel-transaction-22-11-22-1\"\n            ]\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "{{host}}{{supply-chain}}supply_chain/reference_lists/searches/results?from=0&size=20&format=sku-quantity&result_format=sku-quantity",
+							"host": [
+								"{{host}}{{supply-chain}}supply_chain"
+							],
+							"path": [
+								"reference_lists",
+								"searches",
+								"results"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "20"
+								},
+								{
+									"key": "format",
+									"value": "sku-quantity"
+								},
+								{
+									"key": "result_format",
+									"value": "sku-quantity"
+								}
+							]
+						},
+						"description": "QUERY PARAMS:\n- as_containers=true\n- format=tag  |  quantity\n- from=0\n- size=50\n- result_format=tag  |  quantity"
+					},
+					"response": [
+						{
+							"name": "Data Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"order\": {\n        \"property\": \"creationTime\",\n        \"direction\": \"ASC\"\n    },\n    \"filters\": [\n        {\n            \"property\": \"transactionId\",\n            \"operator\": \"EQ\",\n            \"values\": [\n                \"dev02-angel-transaction-22-11-22-1\"\n            ]\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "{{host}}{{supply-chain}}supply_chain/reference_lists/searches/results?from=0&size=20&format=sku-quantity&result_format=sku-quantity",
+									"host": [
+										"{{host}}{{supply-chain}}supply_chain"
+									],
+									"path": [
+										"reference_lists",
+										"searches",
+										"results"
+									],
+									"query": [
+										{
+											"key": "from",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "20"
+										},
+										{
+											"key": "format",
+											"value": "sku-quantity"
+										},
+										{
+											"key": "result_format",
+											"value": "sku-quantity"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "[\n    {\n        \"referenceList\": {\n            \"referenceListId\": 7224358063000889,\n            \"contentFormat\": \"quantity\",\n            \"transactionId\": \"dev02-angel-transaction-22-11-22-1\",\n            \"creationTime\": \"2022-11-22T12:36:46.272Z\",\n            \"updateTime\": \"2022-11-22T12:36:46.515Z\",\n            \"expirationTime\": null,\n            \"lastStatusChange\": \"2022-11-22T12:36:46.272Z\",\n            \"status\": \"available\",\n            \"bizStep\": \"urn:epcglobal:cbv:bizstep:shipping\",\n            \"bizLocation\": \"12\",\n            \"extensions\": {\n                \"deliveryPosCode\": \"ROYALE_1\",\n                \"deliveryPosLevel\": \"floor\",\n                \"deliveryPosX\": 1227.627906976733,\n                \"deliveryPosY\": 721.046511627907,\n                \"deliveryPosZ\": 500,\n                \"requestingStaff\": \"tester2\",\n                \"RRCC\": \"searchnpick-c6bbef165922c044-1547391271380\",\n                \"debug\": \"{\\\"deliveryPosCode\\\":\\\"ROYALE_1\\\",\\\"deliveryPosLevel\\\":\\\"floor\\\",\\\"deliveryPosX\\\":1227.627906976733,\\\"deliveryPosY\\\":721.046511627907,\\\"deliveryPosZ\\\":500,\\\"requestingStaff\\\":\\\"tester2\\\",\\\"RRCC\\\":\\\"searchnpick-c6bbef165922c044-1547391271380\\\"}\"\n            },\n            \"containers\": [\n                {\n                    \"content\": [\n                        {\n                            \"format\": \"sku-quantity\",\n                            \"quantity\": 6,\n                            \"sku\": \"AA10000001\"\n                        }\n                    ]\n                }\n            ]\n        },\n        \"results\": [\n            {\n                \"bizLocation\": \"urn:epc:id:sgln:101_SALESFLOOR\",\n                \"bizStep\": \"urn:epcglobal:cbv:bizstep:shipping\",\n                \"contentFormat\": \"quantity\",\n                \"creationTime\": \"1669116611992\",\n                \"disposition\": \"urn:epcglobal:cbv:disp:sellable_accessible\",\n                \"elementList\": [\n                    {\n                        \"format\": \"sku-quantity\",\n                        \"sku\": \"AA10000001\",\n                        \"quantity\": 6\n                    }\n                ],\n                \"extension\": {\n                    \"cxi_source\": \"310\",\n                    \"Extension_Destinataire\": \"\",\n                    \"cxi_destination\": \"\",\n                    \"mjx_user\": \"pernroot\",\n                    \"Current_Location\": \"310\",\n                    \"cxi_reflist_status\": \"done\"\n                },\n                \"id\": \"ObjectEvent-1669116611992-d3f9a3567d9caf8d9fa10d1dd4a2ed6c-790450d9a771ced8c73efe73db0e95b6\",\n                \"readPoint\": \"RFD850018083523020258 - A4:34:F1:FA:9C:60\",\n                \"recordTime\": \"1669122502802\",\n                \"transactionId\": \"dev02-angel-transaction-22-11-22-1\",\n                \"type\": \"global\"\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "POST /supply_chain/reference_lists/searches/results/extended",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"order\": {\n        \"property\": \"creationTime\",\n        \"direction\": \"ASC\"\n    },\n    \"filters\": [\n        {\n            \"property\": \"transactionId\",\n            \"operator\": \"EQ\",\n            \"values\": [\n                \"dev02-angel-transaction-22-11-22-1\"\n            ]\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "{{host}}{{supply-chain}}supply_chain/reference_lists/searches/results/extended?from=0&size=20&format=sku-quantity",
+							"host": [
+								"{{host}}{{supply-chain}}supply_chain"
+							],
+							"path": [
+								"reference_lists",
+								"searches",
+								"results",
+								"extended"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "20"
+								},
+								{
+									"key": "format",
+									"value": "sku-quantity"
+								}
+							]
+						},
+						"description": "QUERY PARAMS:\n- as_containers=true\n- format=tag  |  quantity\n- from=0\n- size=50\n- result_format=tag  |  quantity"
+					},
+					"response": [
+						{
+							"name": "Data Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"order\": {\n        \"property\": \"creationTime\",\n        \"direction\": \"ASC\"\n    },\n    \"filters\": [\n        {\n            \"property\": \"transactionId\",\n            \"operator\": \"EQ\",\n            \"values\": [\n                \"dev02-angel-transaction-22-11-22-1\"\n            ]\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "{{host}}{{supply-chain}}supply_chain/reference_lists/searches/results?from=0&size=20&format=sku-quantity&result_format=sku-quantity",
+									"host": [
+										"{{host}}{{supply-chain}}supply_chain"
+									],
+									"path": [
+										"reference_lists",
+										"searches",
+										"results"
+									],
+									"query": [
+										{
+											"key": "from",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "20"
+										},
+										{
+											"key": "format",
+											"value": "sku-quantity"
+										},
+										{
+											"key": "result_format",
+											"value": "sku-quantity"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "[\n    {\n        \"referenceList\": {\n            \"referenceListId\": 7224358063000889,\n            \"contentFormat\": \"quantity\",\n            \"transactionId\": \"dev02-angel-transaction-22-11-22-1\",\n            \"creationTime\": \"2022-11-22T12:36:46.272Z\",\n            \"updateTime\": \"2022-11-22T12:36:46.515Z\",\n            \"expirationTime\": null,\n            \"lastStatusChange\": \"2022-11-22T12:36:46.272Z\",\n            \"status\": \"available\",\n            \"bizStep\": \"urn:epcglobal:cbv:bizstep:shipping\",\n            \"bizLocation\": \"12\",\n            \"extensions\": {\n                \"deliveryPosCode\": \"ROYALE_1\",\n                \"deliveryPosLevel\": \"floor\",\n                \"deliveryPosX\": 1227.627906976733,\n                \"deliveryPosY\": 721.046511627907,\n                \"deliveryPosZ\": 500,\n                \"requestingStaff\": \"tester2\",\n                \"RRCC\": \"searchnpick-c6bbef165922c044-1547391271380\",\n                \"debug\": \"{\\\"deliveryPosCode\\\":\\\"ROYALE_1\\\",\\\"deliveryPosLevel\\\":\\\"floor\\\",\\\"deliveryPosX\\\":1227.627906976733,\\\"deliveryPosY\\\":721.046511627907,\\\"deliveryPosZ\\\":500,\\\"requestingStaff\\\":\\\"tester2\\\",\\\"RRCC\\\":\\\"searchnpick-c6bbef165922c044-1547391271380\\\"}\"\n            },\n            \"containers\": [\n                {\n                    \"content\": [\n                        {\n                            \"format\": \"sku-quantity\",\n                            \"quantity\": 6,\n                            \"sku\": \"AA10000001\"\n                        }\n                    ]\n                }\n            ]\n        },\n        \"results\": [\n            {\n                \"bizLocation\": \"urn:epc:id:sgln:101_SALESFLOOR\",\n                \"bizStep\": \"urn:epcglobal:cbv:bizstep:shipping\",\n                \"contentFormat\": \"tag\",\n                \"creationTime\": \"1669116611992\",\n                \"disposition\": \"urn:epcglobal:cbv:disp:sellable_accessible\",\n                \"tagList\": [\n                    {\n                        \"epc\": \"urn:epc:id:sgtin:0011100.000003.1001\",\n                        \"gtin\": \"00011100000036\",\n                        \"sku\": \"AA10000001\",\n                        \"hexa\": \"303400AD700000C0000003E9\",\n                        \"premise\": \"\",\n                        \"objectType\": \"ObjectEvent\",\n                        \"disposition\": \"urn:epcglobal:cbv:disp:sellable_accessible\",\n                        \"bizStep\": \"urn:epcglobal:cbv:bizstep:shipping\",\n                        \"readPoint\": \"RFD850018083523020258 - A4:34:F1:FA:9C:60\",\n                        \"bizLocation\": \"urn:epc:id:sgln:101_SALESFLOOR\",\n                        \"action\": \"OBSERVE\",\n                        \"eventTime\": 1669116611992,\n                        \"recordTime\": 1669122502802,\n                        \"firstSeenTime\": 1669120873757,\n                        \"parameters\": {\n                            \"cxi_source\": \"310\",\n                            \"Extension_Destinataire\": \"\",\n                            \"cxi_destination\": \"\",\n                            \"mjx_user\": \"pernroot\",\n                            \"Current_Location\": \"310\",\n                            \"cxi_reflist_status\": \"done\"\n                        }\n                    },\n                    {\n                        \"epc\": \"urn:epc:id:sgtin:0011100.000002.1001\",\n                        \"gtin\": \"00011100000029\",\n                        \"sku\": \"AA10000001\",\n                        \"hexa\": \"307400AD70000080000003E9\",\n                        \"premise\": \"\",\n                        \"objectType\": \"ObjectEvent\",\n                        \"disposition\": \"urn:epcglobal:cbv:disp:sellable_accessible\",\n                        \"bizStep\": \"urn:epcglobal:cbv:bizstep:shipping\",\n                        \"readPoint\": \"RFD850018083523020258 - A4:34:F1:FA:9C:60\",\n                        \"bizLocation\": \"urn:epc:id:sgln:101_SALESFLOOR\",\n                        \"action\": \"OBSERVE\",\n                        \"eventTime\": 1669116611992,\n                        \"recordTime\": 1669122502802,\n                        \"firstSeenTime\": 1669120873765,\n                        \"parameters\": {\n                            \"cxi_source\": \"310\",\n                            \"Extension_Destinataire\": \"\",\n                            \"cxi_destination\": \"\",\n                            \"mjx_user\": \"pernroot\",\n                            \"Current_Location\": \"310\",\n                            \"cxi_reflist_status\": \"done\"\n                        }\n                    },\n                    {\n                        \"epc\": \"urn:epc:id:sgtin:0011100.000003.1002\",\n                        \"gtin\": \"00011100000036\",\n                        \"sku\": \"AA10000001\",\n                        \"hexa\": \"363400AD700000D8B060C8000000000000000000000000000000\",\n                        \"gs1_128\": \"0100011100000036211002\",\n                        \"premise\": \"\",\n                        \"objectType\": \"ObjectEvent\",\n                        \"disposition\": \"urn:epcglobal:cbv:disp:sellable_accessible\",\n                        \"bizStep\": \"urn:epcglobal:cbv:bizstep:shipping\",\n                        \"readPoint\": \"RFD850018083523020258 - A4:34:F1:FA:9C:60\",\n                        \"bizLocation\": \"urn:epc:id:sgln:101_SALESFLOOR\",\n                        \"action\": \"OBSERVE\",\n                        \"eventTime\": 1669116611992,\n                        \"recordTime\": 1669122502802,\n                        \"firstSeenTime\": 1669120873956,\n                        \"parameters\": {\n                            \"cxi_source\": \"310\",\n                            \"Extension_Destinataire\": \"\",\n                            \"cxi_destination\": \"\",\n                            \"mjx_user\": \"pernroot\",\n                            \"Current_Location\": \"310\",\n                            \"cxi_reflist_status\": \"done\"\n                        }\n                    },\n                    {\n                        \"epc\": \"urn:epc:id:sgtin:0011100.000001.1001\",\n                        \"gtin\": \"00011100000012\",\n                        \"sku\": \"AA10000001\",\n                        \"hexa\": \"363400AD70000058B060C4000000000000000000000000000000\",\n                        \"gs1_128\": \"0100011100000012211001\",\n                        \"premise\": \"\",\n                        \"objectType\": \"ObjectEvent\",\n                        \"disposition\": \"urn:epcglobal:cbv:disp:sellable_accessible\",\n                        \"bizStep\": \"urn:epcglobal:cbv:bizstep:shipping\",\n                        \"readPoint\": \"RFD850018083523020258 - A4:34:F1:FA:9C:60\",\n                        \"bizLocation\": \"urn:epc:id:sgln:101_SALESFLOOR\",\n                        \"action\": \"OBSERVE\",\n                        \"eventTime\": 1669116611992,\n                        \"recordTime\": 1669122502802,\n                        \"firstSeenTime\": 1669120873729,\n                        \"parameters\": {\n                            \"cxi_source\": \"310\",\n                            \"Extension_Destinataire\": \"\",\n                            \"cxi_destination\": \"\",\n                            \"mjx_user\": \"pernroot\",\n                            \"Current_Location\": \"310\",\n                            \"cxi_reflist_status\": \"done\"\n                        }\n                    },\n                    {\n                        \"epc\": \"urn:epc:id:sgtin:0011100.000002.1002\",\n                        \"gtin\": \"00011100000029\",\n                        \"sku\": \"AA10000001\",\n                        \"hexa\": \"303400AD70000080000003EA\",\n                        \"premise\": \"\",\n                        \"objectType\": \"ObjectEvent\",\n                        \"disposition\": \"urn:epcglobal:cbv:disp:sellable_accessible\",\n                        \"bizStep\": \"urn:epcglobal:cbv:bizstep:shipping\",\n                        \"readPoint\": \"RFD850018083523020258 - A4:34:F1:FA:9C:60\",\n                        \"bizLocation\": \"urn:epc:id:sgln:101_SALESFLOOR\",\n                        \"action\": \"OBSERVE\",\n                        \"eventTime\": 1669116611992,\n                        \"recordTime\": 1669122502802,\n                        \"firstSeenTime\": 1669120873954,\n                        \"parameters\": {\n                            \"cxi_source\": \"310\",\n                            \"Extension_Destinataire\": \"\",\n                            \"cxi_destination\": \"\",\n                            \"mjx_user\": \"pernroot\",\n                            \"Current_Location\": \"310\",\n                            \"cxi_reflist_status\": \"done\"\n                        }\n                    },\n                    {\n                        \"epc\": \"urn:epc:id:sgtin:0011100.000001.1002\",\n                        \"gtin\": \"00011100000012\",\n                        \"sku\": \"AA10000001\",\n                        \"hexa\": \"303400AD70000040000003EA\",\n                        \"premise\": \"\",\n                        \"objectType\": \"ObjectEvent\",\n                        \"disposition\": \"urn:epcglobal:cbv:disp:sellable_accessible\",\n                        \"bizStep\": \"urn:epcglobal:cbv:bizstep:shipping\",\n                        \"readPoint\": \"RFD850018083523020258 - A4:34:F1:FA:9C:60\",\n                        \"bizLocation\": \"urn:epc:id:sgln:101_SALESFLOOR\",\n                        \"action\": \"OBSERVE\",\n                        \"eventTime\": 1669116611992,\n                        \"recordTime\": 1669122502802,\n                        \"firstSeenTime\": 1669120873756,\n                        \"parameters\": {\n                            \"cxi_source\": \"310\",\n                            \"Extension_Destinataire\": \"\",\n                            \"cxi_destination\": \"\",\n                            \"mjx_user\": \"pernroot\",\n                            \"Current_Location\": \"310\",\n                            \"cxi_reflist_status\": \"done\"\n                        }\n                    }\n                ],\n                \"extension\": {\n                    \"cxi_source\": \"310\",\n                    \"Extension_Destinataire\": \"\",\n                    \"cxi_destination\": \"\",\n                    \"mjx_user\": \"pernroot\",\n                    \"Current_Location\": \"310\",\n                    \"cxi_reflist_status\": \"done\"\n                },\n                \"id\": \"ObjectEvent-1669116611992-d3f9a3567d9caf8d9fa10d1dd4a2ed6c-790450d9a771ced8c73efe73db0e95b6\",\n                \"readPoint\": \"RFD850018083523020258 - A4:34:F1:FA:9C:60\",\n                \"recordTime\": \"1669122502802\",\n                \"transactionId\": \"dev02-angel-transaction-22-11-22-1\",\n                \"type\": \"global\"\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "POST /supply_chain/reference_lists/searches",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{password}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{username}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"order\": {\n        \"property\": \"creationTime\",\n        \"direction\": \"ASC\"\n    },\n    \"filters\": [\n        {\n            \"property\": \"transactionId\",\n            \"operator\": \"EQ\",\n            \"values\": [\n                \"dev02-angel-transaction-22-11-22-1\"\n            ]\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "{{host}}{{supply-chain}}supply_chain/reference_lists/searches?from=0&size=20&format=sku-quantity",
+							"host": [
+								"{{host}}{{supply-chain}}supply_chain"
+							],
+							"path": [
+								"reference_lists",
+								"searches"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "20"
+								},
+								{
+									"key": "format",
+									"value": "sku-quantity"
+								}
+							]
+						},
+						"description": "QUERY PARAMS:\n- as_containers=true\n- format=tag  |  quantity\n- from=0\n- size=50\n- result_format=tag  |  quantity"
+					},
+					"response": [
+						{
+							"name": "Data Example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"order\": {\n        \"property\": \"creationTime\",\n        \"direction\": \"ASC\"\n    },\n    \"filters\": [\n        {\n            \"property\": \"transactionId\",\n            \"operator\": \"EQ\",\n            \"values\": [\n                \"dev02-angel-transaction-22-11-22-1\"\n            ]\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "{{host}}{{supply-chain}}supply_chain/reference_lists/searches/results?from=0&size=20&format=sku-quantity&result_format=sku-quantity",
+									"host": [
+										"{{host}}{{supply-chain}}supply_chain"
+									],
+									"path": [
+										"reference_lists",
+										"searches",
+										"results"
+									],
+									"query": [
+										{
+											"key": "from",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "20"
+										},
+										{
+											"key": "format",
+											"value": "sku-quantity"
+										},
+										{
+											"key": "result_format",
+											"value": "sku-quantity"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "[\n    {\n        \"referenceListId\": 7224358063000889,\n        \"contentFormat\": \"quantity\",\n        \"transactionId\": \"dev02-angel-transaction-22-11-22-1\",\n        \"creationTime\": \"2022-11-22T12:36:46.272Z\",\n        \"updateTime\": \"2022-11-22T12:36:46.515Z\",\n        \"expirationTime\": null,\n        \"lastStatusChange\": \"2022-11-22T12:36:46.272Z\",\n        \"status\": \"available\",\n        \"bizStep\": \"urn:epcglobal:cbv:bizstep:shipping\",\n        \"bizLocation\": \"12\",\n        \"extensions\": {\n            \"deliveryPosCode\": \"ROYALE_1\",\n            \"deliveryPosLevel\": \"floor\",\n            \"deliveryPosX\": 1227.627906976733,\n            \"deliveryPosY\": 721.046511627907,\n            \"deliveryPosZ\": 500,\n            \"requestingStaff\": \"tester2\",\n            \"RRCC\": \"searchnpick-c6bbef165922c044-1547391271380\",\n            \"debug\": \"{\\\"deliveryPosCode\\\":\\\"ROYALE_1\\\",\\\"deliveryPosLevel\\\":\\\"floor\\\",\\\"deliveryPosX\\\":1227.627906976733,\\\"deliveryPosY\\\":721.046511627907,\\\"deliveryPosZ\\\":500,\\\"requestingStaff\\\":\\\"tester2\\\",\\\"RRCC\\\":\\\"searchnpick-c6bbef165922c044-1547391271380\\\"}\"\n        },\n        \"containers\": [\n            {\n                \"content\": [\n                    {\n                        \"format\": \"sku-quantity\",\n                        \"quantity\": 6,\n                        \"sku\": \"AA10000001\"\n                    }\n                ]\n            }\n        ]\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "POST /statuses/{selector}",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"query\": [\n    \"4234680000\"\n  ],\n  \"filters\": [\n    {\n      \"filter\": \"bizSteps\",\n      \"values\": [\n        \"urn:mjx:epcis:bizstep:missing\"\n      ]\n    }\n  ]\n}"
+				},
+				"url": {
+					"raw": "{{host}}{{statuses}}statuses/skus?format=lotNumber_count",
+					"host": [
+						"{{host}}{{statuses}}statuses"
+					],
+					"path": [
+						"skus"
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "lotNumber_count"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Data example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"query\":[\n         \"urn:epc:id:sgtin:3663328.024109.75\"\n   ]\n}"
+						},
+						"url": {
+							"raw": "{{host}}{{statuses}}statuses/sku",
+							"host": [
+								"{{host}}{{statuses}}statuses"
+							],
+							"path": [
+								"sku"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Server",
+							"value": "Payara Micro #badassfish"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "origin,accept,content-type,Authorization,api_key,token,clientId,oauth2token"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE, OPTIONS, HEAD"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "location,info"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "151200"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Responded-By",
+							"value": "vizix-api-transformer"
+						},
+						{
+							"key": "X-Response-Origin",
+							"value": "ViZix"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 21 May 2019 16:12:51 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "299"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.41231685897\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204999999909\",\n        \"premise\": \"9999999\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"Receiving Simulator Service\",\n        \"bizLocation\": \"urn:epc:id:sgln:9999999_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1627929744613,\n        \"recordTime\": 1627929791958,\n        \"firstSeenTime\": 1614625359666,\n        \"parameters\": {\n            \"cxi_source\": \"9999999\",\n            \"Extension_Destinataire\": \"ALL\",\n            \"cxi_destination\": \"ALL\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"Current_Location\": \"9999999\",\n            \"mjx_sourceModule\": \"setToMissing\",\n            \"cxi_reflist_status\": \"done\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207953\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454251\",\n        \"premise\": \"120\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"00000000-0000-0000-7f29-85b9af654c50\",\n        \"bizLocation\": \"urn:epc:id:sgln:120_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1666657279902,\n        \"recordTime\": 1666657280658,\n        \"firstSeenTime\": 1662728889166,\n        \"parameters\": {\n            \"mjx_deviceId\": \"00000000-0000-0000-7f29-85b9af654c50\",\n            \"_mjx_previousLocation\": \"false\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1662729096593\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1662729102202\",\n            \"mjx_sessionId\": \"1662728885080\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207952\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454250\",\n        \"premise\": \"120\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"00000000-0000-0000-7f29-85b9af654c50\",\n        \"bizLocation\": \"urn:epc:id:sgln:120_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1666657279902,\n        \"recordTime\": 1666657280658,\n        \"firstSeenTime\": 1662728889192,\n        \"parameters\": {\n            \"mjx_deviceId\": \"00000000-0000-0000-7f29-85b9af654c50\",\n            \"_mjx_previousLocation\": \"false\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1662729096593\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1662729102202\",\n            \"mjx_sessionId\": \"1662728885080\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207974\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454266\",\n        \"premise\": \"100\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"00000000-0000-0000-0072-ef749d46ca0e\",\n        \"bizLocation\": \"urn:epc:id:sgln:100_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1664386199571,\n        \"recordTime\": 1664386200382,\n        \"firstSeenTime\": 1662736247246,\n        \"parameters\": {\n            \"mjx_deviceId\": \"00000000-0000-0000-0072-ef749d46ca0e\",\n            \"_mjx_previousLocation\": \"false\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1663078701358\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1663078724099\",\n            \"mjx_sessionId\": \"1663078663519\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207957\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454255\",\n        \"premise\": \"200\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"B25FC7CC-4772-4B1B-972D-D8CFE7598B2B\",\n        \"bizLocation\": \"urn:epc:id:sgln:200_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1666791365391,\n        \"recordTime\": 1666791366900,\n        \"firstSeenTime\": 1663251196566,\n        \"parameters\": {\n            \"mjx_deviceId\": \"B25FC7CC-4772-4B1B-972D-D8CFE7598B2B\",\n            \"_mjx_previousLocation\": \"true\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1663335392549\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1663335411608\",\n            \"mjx_sessionId\": \"1663335371112\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207958\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454256\",\n        \"premise\": \"200\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"B25FC7CC-4772-4B1B-972D-D8CFE7598B2B\",\n        \"bizLocation\": \"urn:epc:id:sgln:200_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1666791365391,\n        \"recordTime\": 1666791366900,\n        \"firstSeenTime\": 1663251260812,\n        \"parameters\": {\n            \"mjx_deviceId\": \"B25FC7CC-4772-4B1B-972D-D8CFE7598B2B\",\n            \"_mjx_previousLocation\": \"true\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1663335392549\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1663335411608\",\n            \"mjx_sessionId\": \"1663335371112\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "POST /statuses/statuses/location/{locationId}/attributes/{attributes}/{selector}",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"query\": [\n    \"4234680000\"\n  ],\n  \"filters\": [\n    {\n      \"filter\": \"bizSteps\",\n      \"values\": [\n        \"urn:mjx:epcis:bizstep:missing\"\n      ]\n    }\n  ]\n}"
+				},
+				"url": {
+					"raw": "{{host}}{{statuses}}statuses/location/2/attributes/inventory_app_flow_transferout_receiving/skus?format=item_status",
+					"host": [
+						"{{host}}{{statuses}}statuses"
+					],
+					"path": [
+						"location",
+						"2",
+						"attributes",
+						"inventory_app_flow_transferout_receiving",
+						"skus"
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "item_status"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Data example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"query\":[\n         \"urn:epc:id:sgtin:3663328.024109.75\"\n   ]\n}"
+						},
+						"url": {
+							"raw": "{{host}}{{statuses}}statuses/sku",
+							"host": [
+								"{{host}}{{statuses}}statuses"
+							],
+							"path": [
+								"sku"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Server",
+							"value": "Payara Micro #badassfish"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "origin,accept,content-type,Authorization,api_key,token,clientId,oauth2token"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE, OPTIONS, HEAD"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "location,info"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "151200"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Responded-By",
+							"value": "vizix-api-transformer"
+						},
+						{
+							"key": "X-Response-Origin",
+							"value": "ViZix"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 21 May 2019 16:12:51 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "299"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.41231685897\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204999999909\",\n        \"premise\": \"9999999\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"Receiving Simulator Service\",\n        \"bizLocation\": \"urn:epc:id:sgln:9999999_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1627929744613,\n        \"recordTime\": 1627929791958,\n        \"firstSeenTime\": 1614625359666,\n        \"parameters\": {\n            \"cxi_source\": \"9999999\",\n            \"Extension_Destinataire\": \"ALL\",\n            \"cxi_destination\": \"ALL\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"Current_Location\": \"9999999\",\n            \"mjx_sourceModule\": \"setToMissing\",\n            \"cxi_reflist_status\": \"done\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207953\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454251\",\n        \"premise\": \"120\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"00000000-0000-0000-7f29-85b9af654c50\",\n        \"bizLocation\": \"urn:epc:id:sgln:120_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1666657279902,\n        \"recordTime\": 1666657280658,\n        \"firstSeenTime\": 1662728889166,\n        \"parameters\": {\n            \"mjx_deviceId\": \"00000000-0000-0000-7f29-85b9af654c50\",\n            \"_mjx_previousLocation\": \"false\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1662729096593\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1662729102202\",\n            \"mjx_sessionId\": \"1662728885080\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207952\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454250\",\n        \"premise\": \"120\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"00000000-0000-0000-7f29-85b9af654c50\",\n        \"bizLocation\": \"urn:epc:id:sgln:120_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1666657279902,\n        \"recordTime\": 1666657280658,\n        \"firstSeenTime\": 1662728889192,\n        \"parameters\": {\n            \"mjx_deviceId\": \"00000000-0000-0000-7f29-85b9af654c50\",\n            \"_mjx_previousLocation\": \"false\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1662729096593\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1662729102202\",\n            \"mjx_sessionId\": \"1662728885080\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207974\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454266\",\n        \"premise\": \"100\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"00000000-0000-0000-0072-ef749d46ca0e\",\n        \"bizLocation\": \"urn:epc:id:sgln:100_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1664386199571,\n        \"recordTime\": 1664386200382,\n        \"firstSeenTime\": 1662736247246,\n        \"parameters\": {\n            \"mjx_deviceId\": \"00000000-0000-0000-0072-ef749d46ca0e\",\n            \"_mjx_previousLocation\": \"false\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1663078701358\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1663078724099\",\n            \"mjx_sessionId\": \"1663078663519\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207957\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454255\",\n        \"premise\": \"200\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"B25FC7CC-4772-4B1B-972D-D8CFE7598B2B\",\n        \"bizLocation\": \"urn:epc:id:sgln:200_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1666791365391,\n        \"recordTime\": 1666791366900,\n        \"firstSeenTime\": 1663251196566,\n        \"parameters\": {\n            \"mjx_deviceId\": \"B25FC7CC-4772-4B1B-972D-D8CFE7598B2B\",\n            \"_mjx_previousLocation\": \"true\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1663335392549\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1663335411608\",\n            \"mjx_sessionId\": \"1663335371112\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207958\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454256\",\n        \"premise\": \"200\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"B25FC7CC-4772-4B1B-972D-D8CFE7598B2B\",\n        \"bizLocation\": \"urn:epc:id:sgln:200_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1666791365391,\n        \"recordTime\": 1666791366900,\n        \"firstSeenTime\": 1663251260812,\n        \"parameters\": {\n            \"mjx_deviceId\": \"B25FC7CC-4772-4B1B-972D-D8CFE7598B2B\",\n            \"_mjx_previousLocation\": \"true\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1663335392549\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1663335411608\",\n            \"mjx_sessionId\": \"1663335371112\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "POST /statuses/location/{location_id}/{selector}",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"query\": [\n    \"4424490000\"\n  ],\n  \"filters\": [\n    {\n      \"filter\": \"bizSteps\",\n      \"values\": [\n        \"urn:epcglobal:cbv:bizstep:receiving\"\n      ]\n    }\n  ]\n}"
+				},
+				"url": {
+					"raw": "{{host}}{{statuses}}statuses/location/110/skus",
+					"host": [
+						"{{host}}{{statuses}}statuses"
+					],
+					"path": [
+						"location",
+						"110",
+						"skus"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Data example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"query\":[\n         \"urn:epc:id:sgtin:3663328.024109.75\"\n   ]\n}"
+						},
+						"url": {
+							"raw": "{{host}}{{statuses}}statuses/location/{locationId}",
+							"host": [
+								"{{host}}{{statuses}}statuses"
+							],
+							"path": [
+								"location",
+								"{locationId}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Server",
+							"value": "Payara Micro #badassfish"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "origin,accept,content-type,Authorization,api_key,token,clientId,oauth2token"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE, OPTIONS, HEAD"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "location,info"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "151200"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Responded-By",
+							"value": "vizix-api-transformer"
+						},
+						{
+							"key": "X-Response-Origin",
+							"value": "ViZix"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 21 May 2019 16:12:51 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "299"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.41231685897\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204999999909\",\n        \"premise\": \"9999999\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"Receiving Simulator Service\",\n        \"bizLocation\": \"urn:epc:id:sgln:9999999_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1627929744613,\n        \"recordTime\": 1627929791958,\n        \"firstSeenTime\": 1614625359666,\n        \"parameters\": {\n            \"cxi_source\": \"9999999\",\n            \"Extension_Destinataire\": \"ALL\",\n            \"cxi_destination\": \"ALL\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"Current_Location\": \"9999999\",\n            \"mjx_sourceModule\": \"setToMissing\",\n            \"cxi_reflist_status\": \"done\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207953\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454251\",\n        \"premise\": \"120\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"00000000-0000-0000-7f29-85b9af654c50\",\n        \"bizLocation\": \"urn:epc:id:sgln:120_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1666657279902,\n        \"recordTime\": 1666657280658,\n        \"firstSeenTime\": 1662728889166,\n        \"parameters\": {\n            \"mjx_deviceId\": \"00000000-0000-0000-7f29-85b9af654c50\",\n            \"_mjx_previousLocation\": \"false\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1662729096593\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1662729102202\",\n            \"mjx_sessionId\": \"1662728885080\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207952\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454250\",\n        \"premise\": \"120\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"00000000-0000-0000-7f29-85b9af654c50\",\n        \"bizLocation\": \"urn:epc:id:sgln:120_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1666657279902,\n        \"recordTime\": 1666657280658,\n        \"firstSeenTime\": 1662728889192,\n        \"parameters\": {\n            \"mjx_deviceId\": \"00000000-0000-0000-7f29-85b9af654c50\",\n            \"_mjx_previousLocation\": \"false\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1662729096593\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1662729102202\",\n            \"mjx_sessionId\": \"1662728885080\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207974\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454266\",\n        \"premise\": \"100\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"00000000-0000-0000-0072-ef749d46ca0e\",\n        \"bizLocation\": \"urn:epc:id:sgln:100_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1664386199571,\n        \"recordTime\": 1664386200382,\n        \"firstSeenTime\": 1662736247246,\n        \"parameters\": {\n            \"mjx_deviceId\": \"00000000-0000-0000-0072-ef749d46ca0e\",\n            \"_mjx_previousLocation\": \"false\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1663078701358\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1663078724099\",\n            \"mjx_sessionId\": \"1663078663519\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207957\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454255\",\n        \"premise\": \"200\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"B25FC7CC-4772-4B1B-972D-D8CFE7598B2B\",\n        \"bizLocation\": \"urn:epc:id:sgln:200_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1666791365391,\n        \"recordTime\": 1666791366900,\n        \"firstSeenTime\": 1663251196566,\n        \"parameters\": {\n            \"mjx_deviceId\": \"B25FC7CC-4772-4B1B-972D-D8CFE7598B2B\",\n            \"_mjx_previousLocation\": \"true\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1663335392549\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1663335411608\",\n            \"mjx_sessionId\": \"1663335371112\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207958\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454256\",\n        \"premise\": \"200\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"B25FC7CC-4772-4B1B-972D-D8CFE7598B2B\",\n        \"bizLocation\": \"urn:epc:id:sgln:200_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1666791365391,\n        \"recordTime\": 1666791366900,\n        \"firstSeenTime\": 1663251260812,\n        \"parameters\": {\n            \"mjx_deviceId\": \"B25FC7CC-4772-4B1B-972D-D8CFE7598B2B\",\n            \"_mjx_previousLocation\": \"true\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1663335392549\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1663335411608\",\n            \"mjx_sessionId\": \"1663335371112\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "POST /statuses/location/level/premise/code/{locationCode}/skus",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"query\": [\n    \"4424490000\"\n  ],\n  \"filters\": [\n    {\n      \"filter\": \"bizSteps\",\n      \"values\": [\n        \"urn:epcglobal:cbv:bizstep:receiving\"\n      ]\n    }\n  ]\n}"
+				},
+				"url": {
+					"raw": "{{host}}{{statuses}}statuses/location/level/premise/code/642/skus",
+					"host": [
+						"{{host}}{{statuses}}statuses"
+					],
+					"path": [
+						"location",
+						"level",
+						"premise",
+						"code",
+						"642",
+						"skus"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Data example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"query\":[\n         \"urn:epc:id:sgtin:3663328.024109.75\"\n   ]\n}"
+						},
+						"url": {
+							"raw": "{{host}}{{statuses}}statuses/location/level/premise/code/{locationCode}/skus",
+							"host": [
+								"{{host}}{{statuses}}statuses"
+							],
+							"path": [
+								"location",
+								"level",
+								"premise",
+								"code",
+								"{locationCode}",
+								"skus"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Server",
+							"value": "Payara Micro #badassfish"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "origin,accept,content-type,Authorization,api_key,token,clientId,oauth2token"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE, OPTIONS, HEAD"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "location,info"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "151200"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Responded-By",
+							"value": "vizix-api-transformer"
+						},
+						{
+							"key": "X-Response-Origin",
+							"value": "ViZix"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 21 May 2019 16:12:51 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "299"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.41231685897\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204999999909\",\n        \"premise\": \"9999999\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"Receiving Simulator Service\",\n        \"bizLocation\": \"urn:epc:id:sgln:9999999_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1627929744613,\n        \"recordTime\": 1627929791958,\n        \"firstSeenTime\": 1614625359666,\n        \"parameters\": {\n            \"cxi_source\": \"9999999\",\n            \"Extension_Destinataire\": \"ALL\",\n            \"cxi_destination\": \"ALL\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"Current_Location\": \"9999999\",\n            \"mjx_sourceModule\": \"setToMissing\",\n            \"cxi_reflist_status\": \"done\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207953\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454251\",\n        \"premise\": \"120\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"00000000-0000-0000-7f29-85b9af654c50\",\n        \"bizLocation\": \"urn:epc:id:sgln:120_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1666657279902,\n        \"recordTime\": 1666657280658,\n        \"firstSeenTime\": 1662728889166,\n        \"parameters\": {\n            \"mjx_deviceId\": \"00000000-0000-0000-7f29-85b9af654c50\",\n            \"_mjx_previousLocation\": \"false\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1662729096593\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1662729102202\",\n            \"mjx_sessionId\": \"1662728885080\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207952\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454250\",\n        \"premise\": \"120\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"00000000-0000-0000-7f29-85b9af654c50\",\n        \"bizLocation\": \"urn:epc:id:sgln:120_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1666657279902,\n        \"recordTime\": 1666657280658,\n        \"firstSeenTime\": 1662728889192,\n        \"parameters\": {\n            \"mjx_deviceId\": \"00000000-0000-0000-7f29-85b9af654c50\",\n            \"_mjx_previousLocation\": \"false\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1662729096593\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1662729102202\",\n            \"mjx_sessionId\": \"1662728885080\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207974\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454266\",\n        \"premise\": \"100\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"00000000-0000-0000-0072-ef749d46ca0e\",\n        \"bizLocation\": \"urn:epc:id:sgln:100_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1664386199571,\n        \"recordTime\": 1664386200382,\n        \"firstSeenTime\": 1662736247246,\n        \"parameters\": {\n            \"mjx_deviceId\": \"00000000-0000-0000-0072-ef749d46ca0e\",\n            \"_mjx_previousLocation\": \"false\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1663078701358\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1663078724099\",\n            \"mjx_sessionId\": \"1663078663519\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207957\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454255\",\n        \"premise\": \"200\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"B25FC7CC-4772-4B1B-972D-D8CFE7598B2B\",\n        \"bizLocation\": \"urn:epc:id:sgln:200_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1666791365391,\n        \"recordTime\": 1666791366900,\n        \"firstSeenTime\": 1663251196566,\n        \"parameters\": {\n            \"mjx_deviceId\": \"B25FC7CC-4772-4B1B-972D-D8CFE7598B2B\",\n            \"_mjx_previousLocation\": \"true\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1663335392549\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1663335411608\",\n            \"mjx_sessionId\": \"1663335371112\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207958\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454256\",\n        \"premise\": \"200\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"B25FC7CC-4772-4B1B-972D-D8CFE7598B2B\",\n        \"bizLocation\": \"urn:epc:id:sgln:200_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1666791365391,\n        \"recordTime\": 1666791366900,\n        \"firstSeenTime\": 1663251260812,\n        \"parameters\": {\n            \"mjx_deviceId\": \"B25FC7CC-4772-4B1B-972D-D8CFE7598B2B\",\n            \"_mjx_previousLocation\": \"true\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1663335392549\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1663335411608\",\n            \"mjx_sessionId\": \"1663335371112\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "POST /statuses/location/level/premise/code/{locationCode}/attributes/{atrributes}/skus",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"query\": [\n    \"4424490000\"\n  ],\n  \"filters\": [\n    {\n      \"filter\": \"bizSteps\",\n      \"values\": [\n        \"urn:epcglobal:cbv:bizstep:receiving\"\n      ]\n    }\n  ]\n}"
+				},
+				"url": {
+					"raw": "{{host}}{{statuses}}statuses/location/level/premise/code/642/attributes/asn_auto_on/skus",
+					"host": [
+						"{{host}}{{statuses}}statuses"
+					],
+					"path": [
+						"location",
+						"level",
+						"premise",
+						"code",
+						"642",
+						"attributes",
+						"asn_auto_on",
+						"skus"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Data example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"query\":[\n         \"urn:epc:id:sgtin:3663328.024109.75\"\n   ]\n}"
+						},
+						"url": {
+							"raw": "{{host}}{{statuses}}statuses/location/level/premise/code/{locationCode}/attributes/{atrributes}/skus",
+							"host": [
+								"{{host}}{{statuses}}statuses"
+							],
+							"path": [
+								"location",
+								"level",
+								"premise",
+								"code",
+								"{locationCode}",
+								"attributes",
+								"{atrributes}",
+								"skus"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Server",
+							"value": "Payara Micro #badassfish"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "origin,accept,content-type,Authorization,api_key,token,clientId,oauth2token"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, PATCH, DELETE, OPTIONS, HEAD"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "location,info"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "151200"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Responded-By",
+							"value": "vizix-api-transformer"
+						},
+						{
+							"key": "X-Response-Origin",
+							"value": "ViZix"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 21 May 2019 16:12:51 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "299"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.41231685897\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204999999909\",\n        \"premise\": \"9999999\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"Receiving Simulator Service\",\n        \"bizLocation\": \"urn:epc:id:sgln:9999999_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1627929744613,\n        \"recordTime\": 1627929791958,\n        \"firstSeenTime\": 1614625359666,\n        \"parameters\": {\n            \"cxi_source\": \"9999999\",\n            \"Extension_Destinataire\": \"ALL\",\n            \"cxi_destination\": \"ALL\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"Current_Location\": \"9999999\",\n            \"mjx_sourceModule\": \"setToMissing\",\n            \"cxi_reflist_status\": \"done\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207953\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454251\",\n        \"premise\": \"120\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"00000000-0000-0000-7f29-85b9af654c50\",\n        \"bizLocation\": \"urn:epc:id:sgln:120_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1666657279902,\n        \"recordTime\": 1666657280658,\n        \"firstSeenTime\": 1662728889166,\n        \"parameters\": {\n            \"mjx_deviceId\": \"00000000-0000-0000-7f29-85b9af654c50\",\n            \"_mjx_previousLocation\": \"false\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1662729096593\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1662729102202\",\n            \"mjx_sessionId\": \"1662728885080\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207952\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454250\",\n        \"premise\": \"120\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"00000000-0000-0000-7f29-85b9af654c50\",\n        \"bizLocation\": \"urn:epc:id:sgln:120_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1666657279902,\n        \"recordTime\": 1666657280658,\n        \"firstSeenTime\": 1662728889192,\n        \"parameters\": {\n            \"mjx_deviceId\": \"00000000-0000-0000-7f29-85b9af654c50\",\n            \"_mjx_previousLocation\": \"false\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1662729096593\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1662729102202\",\n            \"mjx_sessionId\": \"1662728885080\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207974\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454266\",\n        \"premise\": \"100\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"00000000-0000-0000-0072-ef749d46ca0e\",\n        \"bizLocation\": \"urn:epc:id:sgln:100_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1664386199571,\n        \"recordTime\": 1664386200382,\n        \"firstSeenTime\": 1662736247246,\n        \"parameters\": {\n            \"mjx_deviceId\": \"00000000-0000-0000-0072-ef749d46ca0e\",\n            \"_mjx_previousLocation\": \"false\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1663078701358\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1663078724099\",\n            \"mjx_sessionId\": \"1663078663519\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207957\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454255\",\n        \"premise\": \"200\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"B25FC7CC-4772-4B1B-972D-D8CFE7598B2B\",\n        \"bizLocation\": \"urn:epc:id:sgln:200_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1666791365391,\n        \"recordTime\": 1666791366900,\n        \"firstSeenTime\": 1663251196566,\n        \"parameters\": {\n            \"mjx_deviceId\": \"B25FC7CC-4772-4B1B-972D-D8CFE7598B2B\",\n            \"_mjx_previousLocation\": \"true\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1663335392549\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1663335411608\",\n            \"mjx_sessionId\": \"1663335371112\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    },\n    {\n        \"epc\": \"urn:epc:id:sgtin:0042346.080001.13208207958\",\n        \"gtin\": \"00042346800012\",\n        \"sku\": \"4234680000\",\n        \"hexa\": \"30340295A84E204313454256\",\n        \"premise\": \"200\",\n        \"objectType\": \"ObjectEvent\",\n        \"disposition\": \"urn:epcglobal:cbv:disp:missing\",\n        \"bizStep\": \"urn:mjx:epcis:bizstep:missing\",\n        \"readPoint\": \"B25FC7CC-4772-4B1B-972D-D8CFE7598B2B\",\n        \"bizLocation\": \"urn:epc:id:sgln:200_SALESFLOOR\",\n        \"action\": \"OBSERVE\",\n        \"eventTime\": 1666791365391,\n        \"recordTime\": 1666791366900,\n        \"firstSeenTime\": 1663251260812,\n        \"parameters\": {\n            \"mjx_deviceId\": \"B25FC7CC-4772-4B1B-972D-D8CFE7598B2B\",\n            \"_mjx_previousLocation\": \"true\",\n            \"_mjx_sourceMicroservice\": \"ytem-bapi-inventory\",\n            \"mjx_user\": \"epcisUserPERN\",\n            \"mjx_Retail_CycleCountDate\": \"1663335392549\",\n            \"mjx_source\": \"UPDATE_INVENTORY\",\n            \"mjx_batchSqn\": \"1\",\n            \"mjx_tsEdgeIn\": \"1663335411608\",\n            \"mjx_sessionId\": \"1663335371112\",\n            \"mjx_eventType\": \"404000\",\n            \"mjx_sourceModule\": \"setToMissing\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "POST events/searches",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "6e87dec8-7c84-4735-8d81-fbaeacb7c387",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"filters\": [\n    {\n      \"property\": \"epcList.sku\",\n      \"operator\": \"EQ\",\n      \"values\": [\n        \"03663328002728\",\"23663328502208\"\n      ]\n    }\n  ],\n  \"order\": {\n    \"property\": \"eventTime\",\n    \"direction\": \"DESC\"\n  }\n}"
+				},
+				"url": {
+					"raw": "{{host}}{{epcis-core}}events/searches",
+					"host": [
+						"{{host}}{{epcis-core}}events"
+					],
+					"path": [
+						"searches"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Data example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Postman-Token",
+								"value": "6e87dec8-7c84-4735-8d81-fbaeacb7c387",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"filters\": [\n    {\n      \"property\": \"epcList.sku\",\n      \"operator\": \"EQ\",\n      \"values\": [\n        \"03663328002728\",\"23663328502208\"\n      ]\n    }\n  ],\n  \"order\": {\n    \"property\": \"eventTime\",\n    \"direction\": \"DESC\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{host}}{{epcis-core}}events/searches",
+							"host": [
+								"{{host}}{{epcis-core}}events"
+							],
+							"path": [
+								"searches"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n  \"events\": [\n    {\n      \"id\": \"ObjectEvent-1595614980317-83f2883920f88cf13c88c544c178dfca-f438fc16e08a3773bca7207b86f90bb2\",\n      \"type\": \"ObjectEvent\",\n      \"eventTime\": \"2022-02-25T17:07:03.126+0000\",\n      \"recordTime\": \"2022-02-25T17:07:03.126+0000\",\n      \"bizStep\": \"urn:mjx:epcis:bizstep:serializing\",\n      \"disposition\": \"urn:mjx:epcis:disp:serialized\",\n      \"readPoint\": \"urn:cxi:site:loc:PREMISE_SOURCE\",\n      \"bizLocation\": \"urn:cxi:site:loc:PREMISE_SOURCE\",\n      \"premise\": \"PREMISE_SOURCE\",\n      \"bizTransList\": [\n        {\n          \"value\": \"NO_gs1_128_Event\",\n          \"type\": \"\"\n        }\n      ],\n      \"extension\": {\n        \"Extension_Test\": \"Zoe\"\n      },\n      \"epcList\": [\n        {\n          \"epc\": \"urn:epc:id:sgtin:3663328.250220.21\",\n          \"gtin\": \"23663328502208\",\n          \"sku\": \"23663328502208\",\n          \"tid\": null,\n          \"uid\": null,\n          \"cxid\": null,\n          \"hexa\": \"3034DF9780F45B0000000015\"\n        }\n      ],\n      \"action\": \"OBSERVE\"\n    },\n    {\n      \"id\": \"TransactionEvent-1595614980317-83f2883920f88cf13c88c544c178dfca-f438fc16e08a3773bca7207b86f90bb2\",\n      \"type\": \"TransactionEvent\",\n      \"eventTime\": \"2022-02-25T17:07:03.124+0000\",\n      \"recordTime\": \"2022-02-25T17:07:03.124+0000\",\n      \"bizStep\": \"urn:epcglobal:cbv:bizstep:stocking\",\n      \"disposition\": \"urn:mjx:epcis:disp:verify\",\n      \"readPoint\": \"urn:cxi:site:loc:PREMISE_SOURCE\",\n      \"bizLocation\": \"urn:cxi:site:loc:PREMISE_SOURCE\",\n      \"premise\": \"PREMISE_SOURCE\",\n      \"bizTransList\": [\n        {\n          \"value\": \"ParentID_17\",\n          \"type\": \"\"\n        }\n      ],\n      \"extension\": {\n        \"Extension_Test\": \"Zoe\"\n      },\n      \"epcList\": [\n        {\n          \"epc\": \"urn:epc:id:sgtin:3663328.250220.539099685\",\n          \"gtin\": \"23663328502208\",\n          \"sku\": \"23663328502208\",\n          \"tid\": null,\n          \"uid\": null,\n          \"cxid\": null,\n          \"hexa\": \"3034DF9780F45B0020220225\"\n        }\n      ],\n      \"action\": \"ADD\",\n      \"parentID\": \"urn:epc:id:sscc:7072009.1032013250\"\n    },\n    {\n      \"id\": \"ObjectEvent-1595614980325-83f2883920f88cf13c88c544c178dfca-f438fc16e08a3773bca7207b86f90bb2\",\n      \"type\": \"ObjectEvent\",\n      \"eventTime\": \"2022-02-25T17:07:03.120+0000\",\n      \"recordTime\": \"2022-02-25T17:07:03.120+0000\",\n      \"bizStep\": \"urn:mjx:epcis:bizstep:serializing\",\n      \"disposition\": \"urn:mjx:epcis:disp:serialized\",\n      \"readPoint\": \"urn:cxi:site:loc:PREMISE_SOURCE\",\n      \"bizLocation\": \"urn:cxi:site:loc:PREMISE_SOURCE\",\n      \"premise\": \"PREMISE_SOURCE\",\n      \"bizTransList\": [\n        {\n          \"value\": \"gs1_128_Event\",\n          \"type\": \"\"\n        }\n      ],\n      \"extension\": {\n        \"Extension_Test\": \"Zoe\"\n      },\n      \"epcList\": [\n        {\n          \"epc\": \"urn:epc:id:sgtin:3663328.000272.25\",\n          \"gtin\": \"03663328002728\",\n          \"sku\": \"03663328002728\",\n          \"tid\": null,\n          \"uid\": null,\n          \"cxid\": null,\n          \"hexa\": \"3674DF9780004419350000000000000000000000000000000000\",\n          \"gs1_128\": \"01036633280027282125\"\n        }\n      ],\n      \"action\": \"OBSERVE\"\n    }\n  ],\n  \"hasmore\": false,\n  \"page\": 0\n}"
+				}
+			]
+		}
+	]
+}
